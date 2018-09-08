@@ -2,7 +2,9 @@
 const express = require('express');
 
 var app = express();
-var server = app.listen(process.env.PORT || 3000);
+var port = normalizePort(process.env.PORT || '3000');
+app.set('port', port);
+var server = app.listen(app.get('port'));
 
 app.use(express.static('public'));
 
