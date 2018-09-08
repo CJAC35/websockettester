@@ -11,7 +11,7 @@ function setup() {
 function newDrawing(data) {
     noStroke();
     fill(255, 0, 100);
-    ellipse(data.x, data.y, 36, 36);
+    ellipse(data.x, data.y, 16, 16);
 }
 
 function mouseDragged() {
