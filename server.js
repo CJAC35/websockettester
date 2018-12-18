@@ -27,6 +27,5 @@ function newConnection(socket) {
 
     function clearCanvas() {
         io.emit('clear');
-    }
-    
+    }   
 }
