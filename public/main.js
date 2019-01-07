@@ -32,7 +32,7 @@ function setup() {
 
 function newDrawing(data) {
     noStroke();
-    fill(curcolor);
+    fill(data.color);
     ellipse(data.x, data.y, 10, 10);
 }
 
